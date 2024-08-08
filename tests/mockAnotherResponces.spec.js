@@ -7,15 +7,15 @@ test("Mock Tags Data", async ({ page }) => {
         "tags":[
            "Cypress",
            "Playwright",
-           "SLASSCOM"
+           "Japan test community"
         ]
      };
     await route.fulfill({ json });
   });
 
   await page.goto("https://demo.realworld.io/");
-  // Assert that the SLASSCOM  is visible
-  await expect(page.getByText("SLASSCOM")).toBeVisible();
+  // Assert that the Japan test community  is visible
+  await expect(page.getByText("Japan test community")).toBeVisible();
 
   
 });

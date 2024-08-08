@@ -6,8 +6,8 @@ test("Modify API responses ", async ({ page }) => {
     const json = await response.json();
     json.push(
       { name: "Dragon fruit", id: 11 },
-      { name: "Gooseberries", id: 12 },
-      { name: "Coconut", id: 13 }
+      { name: "Apple", id: 12 },
+      { name: "Mango", id: 13 }
     );
     // Fulfill using the original response, while patching the response body
     // with the given JSON object.
